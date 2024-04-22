@@ -1,0 +1,102 @@
+{
+  "pageTranslate": {
+    "en": {
+        "title": "I Want to Ask",
+        "ourSolution": "Our Solution",
+        "button1": "What Do Political Parties Think?",
+        "button2": "Our Proposal"
+      },
+    "mk": {
+        "title": "Сакам Да Прашам",
+        "ourSolution": "Нашето решение",
+        "button1": "Што мислат политичките партии?",
+        "button2": "Нашиот предлог"
+      },
+    "alb": {
+      "title": "Dua Të Pyes",
+      "ourSolution": "Zgjidhja Jonë",
+      "button1": "Çfarë Mendojnë Partitë Politike?",
+      "button2": "Propozimi Ynë"
+  }
+  },
+  "data": {
+    "en": [
+      {
+        "title": "Corruption",
+        "question": "How will you reduce the number of traffic victims and traffic chaos?",
+        "answer": "There is a lot of corruption in Macedonia. The lack of ethical guidelines and codes of conduct is a leading cause. Additionally, there is little transparency, oversight, or independent audits. Digitization can play a significant and positive role in the fight against corruption.",
+        "vmro": "VMRO-DPMNE works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "sdsm": "SDSM works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "dui": "DUI works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "znam": "ZNA works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "levica": "LEVICA works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "alijansa": "ALIANSA ZA ALBANSKI works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "grom": "GROM works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia."
+      },
+      {
+        "title": "Air Pollution",
+        "question": "When will the 700 public facilities stop poisoning citizens with oil and fuel, and where will you find the money for the change?",
+        "answer": "There is a lot of corruption in Macedonia. The lack of ethical guidelines and codes of conduct is a leading cause. Additionally, there is little transparency, oversight, or independent audits. Digitization can play a significant and positive role in the fight against corruption.",
+        "vmro": "VMRO-DPMNE works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "sdsm": "SDSM works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "dui": "DUI works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "znam": "ZNA works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "levica": "LEVICA works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "alijansa": "ALIANSA ZA ALBANSKI works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia.",
+        "grom": "GROM works on the premise that corruption is something that is part of society. It belongs to Macedonia and should remain in Macedonia."
+      }
+    ],
+    "mk": [
+      {
+        "title": "Корупција",
+        "question": "Како ќе го намалите бројот на жртви во сообраќајот и сообраќајниот хаос?",
+        "answer": "Во Македонија има многу корупција. Недостигот на етички упатства и кодекси на однесување е водечка причина. Покрај тоа, има мала транспарентност, контрола или независни ревизии. Дигитализацијата може да одигра голема и позитивна улога во борбата против корупцијата.",
+        "vmro": "ВМРО-ДПМНЕ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "sdsm": "СДСМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "dui": "ДУИ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "znam": "ЗНАМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "levica": "ЛЕВИЦА работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "alijansa": "АЛИЈАНСА ЗА АЛБАНСКИ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "grom": "ГРОМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија."
+      },
+      {
+        "title": "Загадување на воздухот",
+        "question": "Кога 700-те јавни објекти ќе престанат да ги трујат граѓаните со мазут и нафта и од каде ќе најдете пари за промената?",
+        "answer": "Во Македонија има ",
+        "vmro": "ВМРО-ДПМНЕ ",
+        "sdsm": "СДСМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "dui": "ДУИ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "znam": "ЗНАМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "levica": "ЛЕВИЦА работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "alijansa": "АЛИЈАНСА ЗА АЛБАНСКИ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија.",
+        "grom": "ГРОМ работи дека корупцијата е нешто од тоа е дел од општеството. Припаѓа на Македонија и треба да остане во Македонија."
+      }
+    ],
+    "alb": [
+      {
+        "title": "Korrupsioni",
+        "question": "Si do të zvogëloni numrin e viktimave të trafikut dhe kaosit në trafik?",
+        "answer": "Ka shumë korrupsion në Maqedoni. Mungesa e udhëzimeve etike dhe kodeve të sjelljes është një nga shkaqet kryesore. Përveç kësaj, ka pak transparencë, mbikëqyrje ose auditime të pavarura. Dijitalizimi mund të luajë një rol të rëndësishëm dhe pozitiv në luftën kundër korrupsionit.",
+        "vmro": "VMRO-DPMNE punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "sdsm": "SDSM punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "dui": "DUI punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "znam": "ZNA punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "levica": "LEVICA punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "alijansa": "ALIANSA ZA ALBANSKI punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "grom": "GROM punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni."
+      },
+      {
+        "title": "Ndotja e Ajrit",
+        "question": "Kur do të ndalet ndotja e qytetarëve me naftë dhe karburant nga 700 objektet publike dhe nga ku do të gjeni paratë për ndryshimin?",
+        "answer": "Ka shumë korrupsion në Maqedoni. Mungesa e udhëzimeve etike dhe kodeve të sjelljes është një nga shkaqet kryesore. Përveç kësaj, ka pak transparencë, mbikëqyrje ose auditime të pavarura. Dijitalizimi mund të luajë një rol të rëndësishëm dhe pozitiv në luftën kundër korrupsionit.",
+        "vmro": "VMRO-DPMNE punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "sdsm": "SDSM punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "dui": "DUI punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "znam": "ZNA punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "levica": "LEVICA punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "alijansa": "ALIANSA ZA ALBANSKI punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni.",
+        "grom": "GROM punon në bazë të parakushtit se korrupsioni është diçka që është pjesë e shoqërisë. Ai i përket Maqedonisë dhe duhet të qëndrojë në Maqedoni."
+      }
+    ]
+  }
+}
