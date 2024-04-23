@@ -47,7 +47,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   ];
 
   return (
-    <div className='bg-white sm:bg-custom-gray w-full sm:w-4/5 mx-auto p-4'>
+    <div className='bg-white sm:bg-custom-gray w-full sm:w-4/5 mx-auto p-4 pb-36 rounded-b-3xl'>
       <div id="accordion-collapse" data-accordion="collapse" className='mt-4 w-11/12 mx-auto md:w-5/6'>
         {accordionItems.map((item, index) => (
           <div key={index} className='w-full mb-4'>
@@ -61,7 +61,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
                 aria-expanded={activeAccordion === `accordion-collapse-body-${index}`}
                 aria-controls={`accordion-collapse-body-${index}`}
               >
-                <span className='flex items-center'>{iconMapping[item.title.toUpperCase()]} {item.title}</span> {/* Use item.title instead of <item.title /> */}
+                <span className='flex items-center'>{iconMapping[item.title.toUpperCase()]} <p className='ml-4'>{item.title}</p></span> {/* Use item.title instead of <item.title /> */}
                 <svg
                   data-accordion-icon
                   className="w-3 h-3 rotate-180 shrink-0"

@@ -4,6 +4,7 @@ import Banner from './components/banner/Banner';
 import Accordion from './components/accordion/Accordion';
 import jsonData from './data.json';
 import OurSolution from './components/ourSolution/OurSolution';
+import Footer from './components/footer/Footer';
 
 type Language = "en" | "mk" | "alb";
 
@@ -38,6 +39,10 @@ function App() {
     setCurrentQuestionIndex(prevIndex => (prevIndex + 1) % questions.length);
   };
 
+  const handlePrevQuestion = () => {
+    setCurrentQuestionIndex(prevIndex => (prevIndex - 1 + questions.length) % questions.length);
+  };
+
   const currentQuestionNumber = currentQuestionIndex + 1;
   const totalQuestions = questions.length;
 
@@ -51,6 +56,7 @@ function App() {
           questionTitle={questions[currentQuestionIndex].title} // Pass current question title to the banner
           questionText={questions[currentQuestionIndex].question} // Pass current question text to the banner
           onNextQuestion={handleNextQuestion}
+          onPrevQuestion={handlePrevQuestion}
           currentQuestion={currentQuestionNumber}
           totalQuestions={totalQuestions}
           title={pageTranslation.title}
@@ -74,6 +80,7 @@ function App() {
       ) : (
         <OurSolution text={questions[currentQuestionIndex].answer}/>
       )}
+      <Footer/>
     </div>
   );
 }
