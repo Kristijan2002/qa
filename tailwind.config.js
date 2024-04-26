@@ -6,7 +6,7 @@ export default {
       colors: {
         custom: {
          green: "#219653",
-         gray: "#F2F4F7"
+         gray: "#F2F4F7",
         },
       },
       width: {
