@@ -92,7 +92,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
               }`}
               aria-labelledby={`accordion-collapse-heading-${index}`}
             >
-              <div className="p-5 border border-b-0 border-gray-200 bg-white">
+              <div className="text-left p-5 border border-b-0 border-gray-200 bg-white">
                 {item.content}
               </div>
             </div>
