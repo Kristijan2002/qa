@@ -6,6 +6,7 @@ import LevicaIcon from '../icons/LevicaIcon';
 import AlijansaIcon from '../icons/AlijansaIcon';
 import GromIcon from '../icons/GromIcon';
 import DuiIcon from '../icons/DuiIcon';
+import { title } from 'process';
 
 interface AccordionProps {
   vmro: string;
@@ -15,6 +16,7 @@ interface AccordionProps {
   levica: string;
   alijansa: string;
   grom: string;
+  tvoja: string;
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
@@ -27,7 +29,7 @@ const iconMapping: Record<string, React.ReactNode> = {
   GROM: <GromIcon />,
 };
 
-const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom }) => {
+const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -44,8 +46,11 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     { title: 'LEVICA', content: levica },
     { title: 'ALIJANSA ZA ALBANCITE', content: alijansa },
     { title: 'GROM', content: grom },
+    { title: 'TVOJA PARTIJA', content: tvoja}
   ];
 
+  accordionItems.sort((a, b) => a.title.localeCompare(b.title));
+  
   return (
     <div className='bg-white sm:bg-custom-gray w-full sm:w-4/5 mx-auto p-4 pb-36 rounded-b-3xl'>
       <div id="accordion-collapse" data-accordion="collapse" className='mt-4 w-11/12 mx-auto md:w-5/6'>

@@ -19,6 +19,7 @@ interface Question {
   levica: string;
   alijansa: string;
   grom: string;
+  tvoja: string;
 }
 
 function App() {
@@ -75,6 +76,7 @@ function App() {
             levica={questions[currentQuestionIndex].levica}
             alijansa={questions[currentQuestionIndex].alijansa}
             grom={questions[currentQuestionIndex].grom}
+            tvoja={questions[currentQuestionIndex].tvoja}
           />
         )
       ) : (
