@@ -5,9 +5,10 @@ export default {
     extend: {
       colors: {
         custom: {
-         green: "#219653",
-         gray: "#F2F4F7",
-        },
+          green: "#219653",
+          gray: "#F2F4F7",
+          apricot: "#fdf7ed"
+         },
       },
       width: {
        

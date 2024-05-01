@@ -18,12 +18,12 @@ interface AccordionProps {
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
-  VMRO: <VmroIcon />,
+  'VMRO-DPMNE': <VmroIcon />,
   SDSM: <SdsmIcon />,
   DUI: <DuiIcon />,
   ZNAM: <ZnamIcon />,
   LEVICA: <LevicaIcon />,
-  ALIJANSA: <AlijansaIcon />,
+  "ALIJANSA ZA ALBANCITE": <AlijansaIcon />,
   GROM: <GromIcon />,
 };
 
@@ -37,12 +37,12 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   };
 
   const accordionItems = [
-    { title: 'VMRO', content: vmro },
+    { title: 'VMRO-DPMNE', content: vmro },
     { title: 'SDSM', content: sdsm },
     { title: 'DUI', content: dui },
     { title: 'ZNAM', content: znam },
     { title: 'LEVICA', content: levica },
-    { title: 'ALIJANSA', content: alijansa },
+    { title: 'ALIJANSA ZA ALBANCITE', content: alijansa },
     { title: 'GROM', content: grom },
   ];
 
