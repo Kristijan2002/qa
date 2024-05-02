@@ -5,22 +5,46 @@
         "ourSolution": "Our Solution",
         "button1": "What Do Political Parties Think?",
         "button2": "Our Proposal",
-        "noAnswer": "No Answer"
+        "noAnswer": "No Answer",
+        "vmroName": "VMRO-DPMNE",
+        "sdsmName": "SDSM",
+        "duiName": "DUI",
+        "znamName": "ZNAM",
+        "levicaName": "LEVICA",
+        "alijansaName": "ALIJANSA NA ALBANCITE",
+        "gromName": "GROM",
+        "tvojaName": "TVOJA PARTIJA"
       },
     "mk": {
         "title": "Сакам Да Прашам",
         "ourSolution": "Нашето решение",
         "button1": "Што мислат политичките партии?",
         "button2": "Нашиот предлог",
-        "noAnswer": "Нема одговор"
+        "noAnswer": "Нема одговор",
+        "vmroName": "ВМРО-ДПМНЕ",
+        "sdsmName": "СДСМ",
+        "duiName": "ДУИ",
+        "znamName": "ЗНАМ",
+        "levicaName": "ЛЕВИЦА",
+        "alijansaName": "АЛИЈАНСА НА АЛБАНЦИТЕ",
+        "gromName": "ГРОМ",
+        "tvojaName": "ТВОЈА ПАРТИЈА"
       },
     "alb": {
       "title": "Dua Të Pyes",
       "ourSolution": "Zgjidhja Jonë",
       "button1": "Çfarë Mendojnë Partitë Politike?",
       "button2": "Propozimi Ynë",
-      "noAnswer": "Asnjë përgjigje"
-  }
+      "noAnswer": "Asnjë përgjigje",
+      "vmroName": "VMRO-DPMNE",
+      "sdsmName": "SDSM",
+      "duiName": "DUI",
+      "znamName": "ZNAM",
+      "levicaName": "LEVICA",
+      "alijansaName": "ALIJANSA NA ALBANCITE",
+      "gromName": "GROM",
+      "tvojaName": "TVOJA PARTIJA"
+    }
   },
   "data": {
     "en":[

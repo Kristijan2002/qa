@@ -78,6 +78,14 @@ function App() {
             grom={questions[currentQuestionIndex].grom}
             tvoja={questions[currentQuestionIndex].tvoja}
             noAnswer={pageTranslation.noAnswer}
+            vmroName={pageTranslation.vmroName}
+            sdsmName={pageTranslation.sdsmName}
+            duiName={pageTranslation.duiName}
+            znamName={pageTranslation.znamName}
+            levicaName={pageTranslation.levicaName}
+            alijansaName={pageTranslation.alijansaName}
+            gromName={pageTranslation.gromName}
+            tvojaName={pageTranslation.tvojaName}
           />
         )
       ) : (

@@ -21,17 +21,33 @@ interface AccordionProps {
   grom: string;
   tvoja: string;
   noAnswer: string;
+  vmroName: string;
+  sdsmName: string;
+  duiName: string;
+  znamName: string;
+  levicaName: string;
+  alijansaName: string;
+  gromName: string;
+  tvojaName: string;
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
   'VMRO-DPMNE': <VmroIcon />,
-  SDSM: <SdsmIcon />,
-  DUI: <DuiIcon />,
-  ZNAM: <ZnamIcon />,
-  LEVICA: <LevicaIcon />,
-  "ALIJANSA ZA ALBANCITE": <AlijansaIcon />,
-  GROM: <GromIcon />,
-  "TVOJA PARTIJA": <TvojaIcon />
+  'ВМРО-ДПМНЕ': <VmroIcon />,
+  'SDSM': <SdsmIcon />,
+  'СДСМ': <SdsmIcon />,
+  'DUI': <DuiIcon />,
+  'ДУИ': <DuiIcon />,
+  'ZNAM': <ZnamIcon />,
+  'ЗНАМ': <ZnamIcon />,
+  'LEVICA': <LevicaIcon />,
+  'ЛЕВИЦА': <LevicaIcon />,
+  'АЛИЈАНСА НА АЛБАНЦИТЕ': <AlijansaIcon />,
+  'ALIJANSA NA ALBANCITE': <AlijansaIcon />,
+  'GROM': <GromIcon />,
+  'ГРОМ': <GromIcon />,
+  "TVOJA PARTIJA": <TvojaIcon />,
+  "ТВОЈА ПАРТИЈА": <TvojaIcon />
 };
 
 <div className='w-full flex flex-col jutify-center items-center' >
@@ -39,7 +55,7 @@ const iconMapping: Record<string, React.ReactNode> = {
   <h1 className='uppercase'>Nema odgovor</h1>
   </div>
 
-const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja, noAnswer }) => {
+const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja, noAnswer, vmroName, sdsmName, duiName, znamName, levicaName, alijansaName, gromName, tvojaName }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -49,14 +65,14 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   };
 
   const accordionItems = [
-    { title: 'VMRO-DPMNE', content: vmro },
-    { title: 'SDSM', content: sdsm },
-    { title: 'DUI', content: dui },
-    { title: 'ZNAM', content: znam },
-    { title: 'LEVICA', content: levica },
-    { title: 'ALIJANSA ZA ALBANCITE', content: alijansa },
-    { title: 'GROM', content: grom },
-    { title: 'TVOJA PARTIJA', content: tvoja}
+    { title: vmroName, content: vmro },
+    { title: sdsmName, content: sdsm },
+    { title: duiName, content: dui },
+    { title: znamName, content: znam },
+    { title: levicaName, content: levica },
+    { title: alijansaName, content: alijansa },
+    { title: gromName, content: grom },
+    { title: tvojaName, content: tvoja}
   ];
 
   accordionItems.sort((a, b) => a.title.localeCompare(b.title));
