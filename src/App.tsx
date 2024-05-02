@@ -91,7 +91,9 @@ function App() {
       ) : (
         <OurSolution text={questions[currentQuestionIndex].answer}/>
       )}
-      <Footer chatToPress={pageTranslation.chatToPress} chatToPressSubTitle={pageTranslation.chatToPressSubTitle} chatToSupport={pageTranslation.chatToSupport} chatToSupportSubTitle={pageTranslation.chatToSupportSubTitle} visitUs={pageTranslation.visitUs} visitUsSubTitle={pageTranslation.visitUsSubTitle} otherQuestions={pageTranslation.otherQuestions} otherQuestionsSubTitle={pageTranslation.otherQuestionsSubTitle  }/>
+      {/* {pageTranslation.length > 0 && (
+      // <Footer chatToPress={pageTranslation.chatToPress} chatToPressSubTitle={pageTranslation.chatToPressSubTitle} chatToSupport={pageTranslation.chatToSupport} chatToSupportSubTitle={pageTranslation.chatToSupportSubTitle} visitUs={pageTranslation.visitUs} visitUsSubTitle={pageTranslation.visitUsSubTitle} otherQuestions={pageTranslation.otherQuestions} otherQuestionsSubTitle={pageTranslation.otherQuestionsSubTitle  }/>
+    )} */}
     </div>
   );
 }
