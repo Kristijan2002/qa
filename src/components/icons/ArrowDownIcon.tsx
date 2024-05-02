@@ -15,7 +15,7 @@ const ArrowDownIcon = () => {
   </svg>
       `;
   
-    return <div dangerouslySetInnerHTML={{ __html: svgIcon }} />;
+    return <div dangerouslySetInnerHTML={{ __html: svgIcon }} className="w-6"/>;
   };
   
   export default ArrowDownIcon;

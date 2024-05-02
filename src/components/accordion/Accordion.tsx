@@ -81,22 +81,6 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     <p className='ml-4'>{item.title}</p>
   </span> 
   {activeAccordion === `accordion-collapse-body-${index}` ? (<ArrowUpIcon />) : (<ArrowDownIcon />)}
-  <svg
-    data-accordion-icon
-    className={`w-3 h-3 rotate-180 shrink-0 ${activeAccordion === `accordion-collapse-body-${index}` ? 'rotate-0' : 'rotate-180'}`}
-    aria-hidden="true"
-    xmlns="http://www.w3.org/2000/svg"
-    fill="none"
-    viewBox="0 0 10 6"
-  >
-    <path
-      stroke="currentColor"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      strokeWidth="2"
-      d="M9 5 5 1 1 5"
-    />
-  </svg>
 </button>
             </h2>
             <div
