@@ -13,7 +13,15 @@
         "levicaName": "LEVICA",
         "alijansaName": "ALIJANSA NA ALBANCITE",
         "gromName": "GROM",
-        "tvojaName": "TVOJA PARTIJA"
+        "tvojaName": "TVOJA PARTIJA",
+        "chatToPress": "Chat to press contact",
+        "chatToPressSubTitle": "Speak to our friendly team.",
+        "chatToSupport": "Chat to support",
+        "chatToSupportSubTitle": "We’re here to help.",
+        "visitUs": "Visit us",
+        "visitUsSubTitle": "Visit our office HQ.",
+        "otherQuestions": "Any other question",
+        "otherQuestionsSubTitle": "Mon-Fri from 8am to 5pm."
       },
     "mk": {
         "title": "Сакам Да Прашам",
@@ -28,7 +36,15 @@
         "levicaName": "ЛЕВИЦА",
         "alijansaName": "АЛИЈАНСА НА АЛБАНЦИТЕ",
         "gromName": "ГРОМ",
-        "tvojaName": "ТВОЈА ПАРТИЈА"
+        "tvojaName": "ТВОЈА ПАРТИЈА",
+        "chatToPress": "Разговор со прес-контакт",
+        "chatToPressSubTitle": "Разговарајте со нашиот пријателски тим.",
+        "chatToSupport": "Разговор со поддршка",
+        "chatToSupportSubTitle": "Ние сме тука да помогнеме.",
+        "visitUs": "Посетете не",
+        "visitUsSubTitle": "Посетете го нашиот канцелариски центар.",
+        "otherQuestions": "Било какво друго прашање",
+        "otherQuestionsSubTitle": "Понеделник-Петок од 8 часот наутро до 5 часот попладне."
       },
     "alb": {
       "title": "Dua Të Pyes",
@@ -43,7 +59,15 @@
       "levicaName": "LEVICA",
       "alijansaName": "ALIJANSA NA ALBANCITE",
       "gromName": "GROM",
-      "tvojaName": "TVOJA PARTIJA"
+      "tvojaName": "TVOJA PARTIJA",
+      "chatToPress": "Bisedoni me kontaktin për shtyp",
+      "chatToPressSubTitle": "Bisedoni me ekipin tonë miqësor.",
+      "chatToSupport": "Bisedoni për mbështetje",
+      "chatToSupportSubTitle": "Jemi këtu për të ndihmuar.",
+      "visitUs": "Vizitoj",
+      "visitUsSubTitle": "Vizitoni zyrën tonë kryesore.",
+      "otherQuestions": "Pyetje të tjera",
+      "otherQuestionsSubTitle": "E hënë-e premte nga ora 8 e mëngjesit deri në ora 5 pasdites."
     }
   },
   "data": {

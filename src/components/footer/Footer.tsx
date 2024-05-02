@@ -6,9 +6,18 @@ import MessageFooterIcon from '../icons/MessageFooterIcon';
 import LocationIcon from '../icons/LocationIcon';
 import PhoneIcon from '../icons/PhoneIcon';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+    chatToPress: string;
+    chatToPressSubTitle: string;
+    chatToSupport: string;
+    chatToSupportSubTitle: string;
+    visitUs: string;
+    visitUsSubTitle: string;
+    otherQuestions: string;
+    otherQuestionsSubTitle: string;
+}
 
-
+const Footer: React.FC<FooterProps> = ({chatToPress, chatToPressSubTitle, chatToSupport, chatToSupportSubTitle, visitUs, visitUsSubTitle,otherQuestions, otherQuestionsSubTitle}) => {
     
     return (
         <footer className="pt-6 pb-6 w-11/12 mx-auto">
@@ -31,10 +40,10 @@ const Footer: React.FC = () => {
                     <h1 className='text-2xl sm:text-3xl md:text-5xl lg:6xl mb-4'>We’d love to hear from you</h1>
                     <p className='text-slate-500'>Our friendly team is always here to chat.</p>
                     <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4'>
-                        <FooterCard icon={<SmileIcon />} title='Chat to press contact' subTitle='Speak to our frendly team.' contact='press@sakamdaprasam.mk'/>
-                        <FooterCard icon={<MessageFooterIcon />} title='Chat to support' subTitle='We’re here to help.' contact='support@sakamdaprasam.mk'/>
-                        <FooterCard icon={<LocationIcon />} title='Visit us' subTitle='Visit our office HQ.' contact='100 Smith Street Collingwood VIC 3066 AU'/>
-                        <FooterCard icon={<PhoneIcon />} title='Any other question' subTitle='Mon' contact='zdravo@sakamdaprasam.mk'/>
+                        <FooterCard icon={<SmileIcon />} title={chatToPress} subTitle={chatToPressSubTitle} contact='press@sakamdaprasam.mk'/>
+                        <FooterCard icon={<MessageFooterIcon />} title={chatToSupport} subTitle={chatToSupportSubTitle} contact='support@sakamdaprasam.mk'/>
+                        <FooterCard icon={<LocationIcon />} title={visitUs} subTitle={visitUsSubTitle} contact='100 Smith Street Collingwood VIC 3066 AU'/>
+                        <FooterCard icon={<PhoneIcon />} title={otherQuestions} subTitle={otherQuestionsSubTitle} contact='zdravo@sakamdaprasam.mk'/>
                      
                     </div>
                 </div>
