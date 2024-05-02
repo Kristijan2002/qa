@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                 </div>
 
                 <div className='mt-36 text-left'>
-                    <p className='text-custom-purple mb-4'>Contact us</p>
+                    <p className='text-custom-green mb-4'>Contact us</p>
                     <h1 className='text-2xl sm:text-3xl md:text-5xl lg:6xl mb-4'>We’d love to hear from you</h1>
                     <p className='text-slate-500'>Our friendly team is always here to chat.</p>
                     <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4'>

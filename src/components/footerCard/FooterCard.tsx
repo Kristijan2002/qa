@@ -16,7 +16,7 @@ const FooterCard: React.FC<Props> = ({icon, title, subTitle, contact}) => {
       <span className='mb-8'>{icon}</span>
       <h1 className='text-2xl'>{title}</h1>
       <p className='text-slate-500 mb-4'>{subTitle}</p>
-      <p className='text-custom-purple'>{contact}</p>
+      <p className='text-custom-green'>{contact}</p>
      </div>
     );
 };
