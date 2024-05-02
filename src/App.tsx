@@ -89,7 +89,7 @@ function App() {
           />
         )
       ) : (
-        <OurSolution text={questions[currentQuestionIndex].answer}/>
+        <OurSolution text={pageTranslation.ourSolutionText} title={pageTranslation.ourSolutionTitle}/>
       )}
       {pageTranslation && (
       <Footer chatToPress={pageTranslation.chatToPress} chatToPressSubTitle={pageTranslation.chatToPressSubTitle} chatToSupport={pageTranslation.chatToSupport} chatToSupportSubTitle={pageTranslation.chatToSupportSubTitle} visitUs={pageTranslation.visitUs} visitUsSubTitle={pageTranslation.visitUsSubTitle} otherQuestions={pageTranslation.otherQuestions} otherQuestionsSubTitle={pageTranslation.otherQuestionsSubTitle} contactUs={pageTranslation.contactUs} title={pageTranslation.title2} subTitle={pageTranslation.subTitle} together={pageTranslation.together} whoAsks={pageTranslation.whoAsks} weAre={pageTranslation.weAre}/>

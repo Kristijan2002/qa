@@ -4,7 +4,7 @@
         "title": "I Want to Ask",
         "ourSolution": "Our Solution",
         "button1": "What Do Political Parties Think?",
-        "button2": "Our Proposal",
+        "button2": "About us",
         "noAnswer": "No Answer",
         "vmroName": "VMRO-DPMNE",
         "sdsmName": "SDSM",
@@ -27,13 +27,15 @@
         "otherQuestionsSubTitle": "Mon-Fri from 8am to 5pm.",
         "together": "Together",
         "whoAsks": "Who asks?",
-        "weAre": "We are a group of independent green advisors and activists all over Macedonia, who stand for a green, humane and fair society for all."
+        "weAre": "We are a group of independent green advisors and activists all over Macedonia, who stand for a green, humane and fair society for all.",
+        "ourSolutionTitle": "Why this initiative?",
+        "ourSolutionText": "We are a group of engaged citizens and activists, dedicated to increasing transparency in elections. To enable the citizens, we asked the political parties 18 critical questions that cover vital issues such as the environment, society, urban development and the general well-being of Macedonia. Their responses, available on our website, provide citizens with insights to make informed decisions. We believe that an informed voice is essential to shaping our shared future. Join us in advocating for transparency and civic engagement."
       },
     "mk": {
         "title": "Сакам Да Прашам",
         "ourSolution": "Нашето решение",
         "button1": "Што мислат политичките партии?",
-        "button2": "Нашиот предлог",
+        "button2": "За нас",
         "noAnswer": "Нема одговор",
         "vmroName": "ВМРО-ДПМНЕ",
         "sdsmName": "СДСМ",
@@ -56,13 +58,15 @@
         "otherQuestionsSubTitle": "Понеделник-Петок од 8 часот наутро до 5 часот попладне.",
         "together": "Заедно",
         "whoAsks": "Кој прашува?",
-        "weAre": "Ние сме група од независни зелени советници и активисти ширум Македонија, кои се залагаат за зелено, хумано и фер општество за сите."
+        "weAre": "Ние сме група од независни зелени советници и активисти ширум Македонија, кои се залагаат за зелено, хумано и фер општество за сите.",
+        "ourSolutionTitle": "Зошто оваа иницијатива?",
+        "ourSolutionText": "Ние сме група ангажирани граѓани и активисти, посветени на зголемување на прозрачноста во изборите. За да ги овозможиме граѓаните, им поставивме на политичките партии 18 критични прашања кои опфаќаат витални прашања како околината, општеството, урбанистичкиот развој и општото благосостојба на Македонија. Нивните одговори, достапни на нашиот веб-сајт, ги нудат граѓаните со впечатоци за да направат информирани одлуки. Сметаме дека информиран глас е суштински за обликување на нашата заедничка иднина. Придружете ни се во застапувањето на прозрачноста и граѓанското вклучување."
       },
     "alb": {
       "title": "Dua Të Pyes",
       "ourSolution": "Zgjidhja Jonë",
       "button1": "Çfarë Mendojnë Partitë Politike?",
-      "button2": "Propozimi Ynë",
+      "button2": "Rreth nesh",
       "noAnswer": "Asnjë përgjigje",
       "vmroName": "VMRO-DPMNE",
       "sdsmName": "SDSM",
@@ -85,7 +89,9 @@
       "otherQuestionsSubTitle": "E hënë-e premte nga ora 8 e mëngjesit deri në ora 5 pasdites.",
       "together": "Bashkë",
       "whoAsks": "Kush pyet?",
-      "weAre": "Ne jemi një grup këshilltarësh dhe aktivistë të pavarur të gjelbër të shpërndarë në Maqedoni, të cilët punojnë për një shoqëri gjelbër, humane dhe e drejtë për të gjithë."
+      "weAre": "Ne jemi një grup këshilltarësh dhe aktivistë të pavarur të gjelbër të shpërndarë në Maqedoni, të cilët punojnë për një shoqëri gjelbër, humane dhe e drejtë për të gjithë.",
+      "ourSolutionTitle": "Pse kjo iniciativë?",
+      "ourSolutionText": "Ne jemi një grup qytetarësh dhe aktivistë të angazhuar, të përkushtuar në rritjen e transparencës në zgjedhje. Për të mundësuar qytetarët, ne u kemi vendosur partive politike 18 pyetje kritike që përfshijnë çështje jetike si mjedisi, shoqëria, zhvillimi urban dhe mirëqenia e përgjithshme e Maqedonisë. Përgjigjet e tyre, të disponueshme në faqen tonë të internetit, ofrojnë qytetarëve informacione për të marrë vendime të informuara. Ne besojmë se një zë i informuar është jetik për formimin e të ardhmes tonë të përbashkët. Bashkohuni me ne në përfaqësimin e transparencës dhe përfshirjes së qytetarëve."
     }
   },
   "data": {
