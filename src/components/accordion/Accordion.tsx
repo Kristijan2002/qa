@@ -92,7 +92,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   aria-expanded={activeAccordion === `accordion-collapse-body-${index}`}
   aria-controls={`accordion-collapse-body-${index}`}
 >
-  <span className='flex items-center'>
+  <span className='flex items-center text-xs sm:text-sm md:text-lg'>
     {iconMapping[item.title.toUpperCase()]} 
     <p className='ml-4'>{item.title}</p>
   </span> 

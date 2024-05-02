@@ -1,5 +1,10 @@
 import React from 'react';
 import Partners from '../partners/Partners';
+import FooterCard from '../footerCard/FooterCard';
+import SmileIcon from '../icons/SmileIcon';
+import MessageFooterIcon from '../icons/MessageFooterIcon';
+import LocationIcon from '../icons/LocationIcon';
+import PhoneIcon from '../icons/PhoneIcon';
 
 const Footer: React.FC = () => {
 
@@ -17,8 +22,21 @@ const Footer: React.FC = () => {
                     <Partners img='/gaziBaba.png' title='Зелените од гази баба' city="Скопје"/>
                     <Partners img='/karpos.png' title='Зелените од Карпош' city="Карпош - Скопје"/>
                     <Partners img='/zaedno.png' title='Заедно за промена' city="Скопје"/>
-                    <Partners img='/sos 1.png' title='Охрис сос' city="Охрис"/>
+                    <Partners img='/sos 1.png' title='Охрид сос' city="Охрид"/>
                     <Partners img='/stigae.png' title='Стига е!' city="Струмица"/>
+                </div>
+
+                <div className='mt-36 text-left'>
+                    <p className='text-custom-purple mb-4'>Contact us</p>
+                    <h1 className='text-2xl sm:text-3xl md:text-5xl lg:6xl mb-4'>We’d love to hear from you</h1>
+                    <p className='text-slate-500'>Our friendly team is always here to chat.</p>
+                    <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4'>
+                        <FooterCard icon={<SmileIcon />} title='Chat to press contact' subTitle='Speak to our frendly team.' contact='press@sakamdaprasam.mk'/>
+                        <FooterCard icon={<MessageFooterIcon />} title='Chat to support' subTitle='We’re here to help.' contact='support@sakamdaprasam.mk'/>
+                        <FooterCard icon={<LocationIcon />} title='Visit us' subTitle='Visit our office HQ.' contact='100 Smith Street Collingwood VIC 3066 AU'/>
+                        <FooterCard icon={<PhoneIcon />} title='Any other question' subTitle='Mon' contact='zdravo@sakamdaprasam.mk'/>
+                     
+                    </div>
                 </div>
         </footer>
     );
