@@ -10,15 +10,39 @@ interface Props{
 }
 
 const FooterCard: React.FC<Props> = ({icon, title, subTitle, contact}) => {
+    // const copyContactToClipboard = () => {
+    //     const tempInput = document.createElement('input');
+    //     tempInput.value = contact;
+    //     document.body.appendChild(tempInput);
+    //     tempInput.select();
+    //     document.execCommand('copy');
+    //     document.body.removeChild(tempInput);
+    //     alert('Contact copied to clipboard!');
+    //   };
+      
     const copyContactToClipboard = () => {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(contact)) {
+          alert('Invalid email address!');
+          return;
+        }
+      
+        // Attempt to copy contact to clipboard
         const tempInput = document.createElement('input');
         tempInput.value = contact;
         document.body.appendChild(tempInput);
         tempInput.select();
         document.execCommand('copy');
         document.body.removeChild(tempInput);
-        alert('Contact copied to clipboard!');
+        
+        // Open email window
+        const emailSubject = encodeURIComponent("Regarding Your Contact Information");
+        const emailBody = encodeURIComponent(`Hello,\n\nI am interested in the following contact information: ${contact}`);
+        const mailtoUrl = `mailto:${contact}?subject=${emailSubject}&body=${emailBody}`;
+        window.open(mailtoUrl, '_blank');
       };
+      
+      
 
     return (
      <div className='w-full bg-custom-bgGray rounded-xl p-4'>
