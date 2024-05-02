@@ -14,6 +14,9 @@
         "alijansaName": "ALIJANSA NA ALBANCITE",
         "gromName": "GROM",
         "tvojaName": "TVOJA PARTIJA",
+        "contactUs": "Contact us",
+        "title2": "We’d love to hear from you",
+        "subTitle": "Our friendly team is always here to chat.",
         "chatToPress": "Chat to press contact",
         "chatToPressSubTitle": "Speak to our friendly team.",
         "chatToSupport": "Chat to support",
@@ -21,7 +24,10 @@
         "visitUs": "Visit us",
         "visitUsSubTitle": "Visit our office HQ.",
         "otherQuestions": "Any other question",
-        "otherQuestionsSubTitle": "Mon-Fri from 8am to 5pm."
+        "otherQuestionsSubTitle": "Mon-Fri from 8am to 5pm.",
+        "together": "Together",
+        "whoAsks": "Who asks?",
+        "weAre": "We are a group of independent green advisors and activists all over Macedonia, who stand for a green, humane and fair society for all."
       },
     "mk": {
         "title": "Сакам Да Прашам",
@@ -37,6 +43,9 @@
         "alijansaName": "АЛИЈАНСА НА АЛБАНЦИТЕ",
         "gromName": "ГРОМ",
         "tvojaName": "ТВОЈА ПАРТИЈА",
+        "contactUs": "Контактирајте не",
+        "title2": "Сакаме да чуеме од вас",
+        "subTitle": "Нашето пријателско тим е секогаш тука за разговор.",
         "chatToPress": "Разговор со прес-контакт",
         "chatToPressSubTitle": "Разговарајте со нашиот пријателски тим.",
         "chatToSupport": "Разговор со поддршка",
@@ -44,7 +53,10 @@
         "visitUs": "Посетете не",
         "visitUsSubTitle": "Посетете го нашиот канцелариски центар.",
         "otherQuestions": "Било какво друго прашање",
-        "otherQuestionsSubTitle": "Понеделник-Петок од 8 часот наутро до 5 часот попладне."
+        "otherQuestionsSubTitle": "Понеделник-Петок од 8 часот наутро до 5 часот попладне.",
+        "together": "Заедно",
+        "whoAsks": "Кој прашува?",
+        "weAre": "Ние сме група од независни зелени советници и активисти ширум Македонија, кои се залагаат за зелено, хумано и фер општество за сите."
       },
     "alb": {
       "title": "Dua Të Pyes",
@@ -60,6 +72,9 @@
       "alijansaName": "ALIJANSA NA ALBANCITE",
       "gromName": "GROM",
       "tvojaName": "TVOJA PARTIJA",
+      "contactUs": "Na kontaktoni",
+      "title2": "Ne do të do të dëgjojmë nga ju",
+      "subTitle": "Ekipi ynë miqësor është gjithmonë këtu për të biseduar.",
       "chatToPress": "Bisedoni me kontaktin për shtyp",
       "chatToPressSubTitle": "Bisedoni me ekipin tonë miqësor.",
       "chatToSupport": "Bisedoni për mbështetje",
@@ -67,7 +82,10 @@
       "visitUs": "Vizitoj",
       "visitUsSubTitle": "Vizitoni zyrën tonë kryesore.",
       "otherQuestions": "Pyetje të tjera",
-      "otherQuestionsSubTitle": "E hënë-e premte nga ora 8 e mëngjesit deri në ora 5 pasdites."
+      "otherQuestionsSubTitle": "E hënë-e premte nga ora 8 e mëngjesit deri në ora 5 pasdites.",
+      "together": "Bashkë",
+      "whoAsks": "Kush pyet?",
+      "weAre": "Ne jemi një grup këshilltarësh dhe aktivistë të pavarur të gjelbër të shpërndarë në Maqedoni, të cilët punojnë për një shoqëri gjelbër, humane dhe e drejtë për të gjithë."
     }
   },
   "data": {
