@@ -6,7 +6,6 @@ import LevicaIcon from '../icons/LevicaIcon';
 import AlijansaIcon from '../icons/AlijansaIcon';
 import GromIcon from '../icons/GromIcon';
 import DuiIcon from '../icons/DuiIcon';
-import { title } from 'process';
 
 interface AccordionProps {
   vmro: string;

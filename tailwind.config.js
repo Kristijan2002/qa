@@ -7,7 +7,8 @@ export default {
         custom: {
           green: "#0b9444",
           gray: "#F2F4F7",
-          apricot: "#fdf7ed"
+          apricot: "#fdf7ed",
+          purple: "#6941C6"
          },
       },
       width: {

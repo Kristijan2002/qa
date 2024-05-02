@@ -12,14 +12,12 @@ interface Props{
 const Partners: React.FC<Props> = ({img, title, city}) => {
 
     return (
-     <div className='flex flex-col justify-center items-center w-1/2 md:w-1/4 my-4'>
-        <img src={img} alt="" className='max-w-28'/>
-        <h1 className='text-md md:text-xl lg:text-2xl xl:text-3xl 2xl:text-4xl uppercase'>{title}</h1>
-        <span className='uppercase text-gray'>{city}</span>
-        <div className='flex w-1/2 mx-auto justify-between'>
-        <XIcon />
-        <LinkedinIcon />
-        <BehanceIcon />
+     <div className='flex flex-col items-center w-1/2 md:w-1/4 my-4 h-42'>
+        <img src={img} alt="" className='max-w-28 mb-8'/>
+        <div>
+
+        <h1 className='text-md md:text-md lg:text-md xl:text-xl 2xl:text-2xl uppercase'>{title}</h1>
+        <span className='uppercase text-custom-purple'>{city}</span>
         </div>
      </div>
     );
