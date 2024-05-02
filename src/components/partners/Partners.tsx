@@ -12,7 +12,7 @@ interface Props{
 const Partners: React.FC<Props> = ({img, title, city}) => {
 
     return (
-     <div className='flex flex-col items-center w-1/2 md:w-1/4 my-4 h-42'>
+     <div className='flex flex-col items-center w-full md:w-1/2 lg:w-1/4 my-4 h-42'>
         <img src={img} alt="" className='max-w-28 mb-8'/>
         <div>
 

@@ -6,6 +6,7 @@ import LevicaIcon from '../icons/LevicaIcon';
 import AlijansaIcon from '../icons/AlijansaIcon';
 import GromIcon from '../icons/GromIcon';
 import DuiIcon from '../icons/DuiIcon';
+import NoAnswerIcon from '../icons/NoAnswerIcon';
 
 interface AccordionProps {
   vmro: string;
@@ -16,6 +17,7 @@ interface AccordionProps {
   alijansa: string;
   grom: string;
   tvoja: string;
+  noAnswer: string;
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
@@ -28,7 +30,12 @@ const iconMapping: Record<string, React.ReactNode> = {
   GROM: <GromIcon />,
 };
 
-const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja }) => {
+<div className='w-full flex flex-col jutify-center items-center' >
+<img src="/Group.png" alt="" className='w-1/2 mb-8'/>
+  <h1 className='uppercase'>Nema odgovor</h1>
+  </div>
+
+const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja, noAnswer }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -91,9 +98,29 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
               }`}
               aria-labelledby={`accordion-collapse-heading-${index}`}
             >
-              <div className="text-left p-5 border border-b-0 border-gray-200 bg-white">
-                {item.content}
-              </div>
+                 {item.content ? (
+      <>
+        <h2 id={`accordion-collapse-heading-${index}`}>
+          {/* Button code here */}
+        </h2>
+        <div
+          id={`accordion-collapse-body-${index}`}
+          className={`${
+            activeAccordion === `accordion-collapse-body-${index}` ? 'block' : 'hidden'
+          }`}
+          aria-labelledby={`accordion-collapse-heading-${index}`}
+        >
+          <div className="text-left p-5 border border-b-0 border-gray-200 bg-white">
+            {item.content}
+          </div>
+        </div>
+      </>
+    ) : (
+      <div className='w-full flex flex-col justify-center items-center py-4'>
+        <img src="/Group.png" alt=""/>
+        <h1 className='uppercase'>{noAnswer}</h1>
+      </div>
+    )}
             </div>
           </div>
         ))}

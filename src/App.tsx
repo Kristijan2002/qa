@@ -77,6 +77,7 @@ function App() {
             alijansa={questions[currentQuestionIndex].alijansa}
             grom={questions[currentQuestionIndex].grom}
             tvoja={questions[currentQuestionIndex].tvoja}
+            noAnswer={pageTranslation.noAnswer}
           />
         )
       ) : (
