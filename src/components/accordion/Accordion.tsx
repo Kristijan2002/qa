@@ -7,6 +7,7 @@ import AlijansaIcon from '../icons/AlijansaIcon';
 import GromIcon from '../icons/GromIcon';
 import DuiIcon from '../icons/DuiIcon';
 import NoAnswerIcon from '../icons/NoAnswerIcon';
+import TvojaIcon from '../icons/TvojaIcon';
 
 interface AccordionProps {
   vmro: string;
@@ -28,6 +29,7 @@ const iconMapping: Record<string, React.ReactNode> = {
   LEVICA: <LevicaIcon />,
   "ALIJANSA ZA ALBANCITE": <AlijansaIcon />,
   GROM: <GromIcon />,
+  "TVOJA PARTIJA": <TvojaIcon />
 };
 
 <div className='w-full flex flex-col jutify-center items-center' >
@@ -63,33 +65,36 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
         {accordionItems.map((item, index) => (
           <div key={index} className='w-full mb-4'>
             <h2 id={`accordion-collapse-heading-${index}`}>
-              <button
-                type="button"
-                className={`bg-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3 ${
-                  activeAccordion === `accordion-collapse-body-${index}` && 'active'
-                }`}
-                onClick={() => toggleAccordion(`accordion-collapse-body-${index}`)}
-                aria-expanded={activeAccordion === `accordion-collapse-body-${index}`}
-                aria-controls={`accordion-collapse-body-${index}`}
-              >
-                <span className='flex items-center'>{iconMapping[item.title.toUpperCase()]} <p className='ml-4'>{item.title}</p></span> {/* Use item.title instead of <item.title /> */}
-                <svg
-                  data-accordion-icon
-                  className="w-3 h-3 rotate-180 shrink-0"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 10 6"
-                >
-                  <path
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M9 5 5 1 1 5"
-                  />
-                </svg>
-              </button>
+            <button
+  type="button"
+  className={`bg-white flex items-center justify-between w-full p-5 font-medium rtl:text-right text-gray-500 border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 gap-3 ${
+    activeAccordion === `accordion-collapse-body-${index}` && 'active'
+  }`}
+  onClick={() => toggleAccordion(`accordion-collapse-body-${index}`)}
+  aria-expanded={activeAccordion === `accordion-collapse-body-${index}`}
+  aria-controls={`accordion-collapse-body-${index}`}
+>
+  <span className='flex items-center'>
+    {iconMapping[item.title.toUpperCase()]} 
+    <p className='ml-4'>{item.title}</p>
+  </span> {/* Use item.title instead of <item.title /> */}
+  <svg
+    data-accordion-icon
+    className={`w-3 h-3 rotate-180 shrink-0 ${activeAccordion === `accordion-collapse-body-${index}` ? 'rotate-0' : 'rotate-180'}`}
+    aria-hidden="true"
+    xmlns="http://www.w3.org/2000/svg"
+    fill="none"
+    viewBox="0 0 10 6"
+  >
+    <path
+      stroke="currentColor"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      strokeWidth="2"
+      d="M9 5 5 1 1 5"
+    />
+  </svg>
+</button>
             </h2>
             <div
               id={`accordion-collapse-body-${index}`}
@@ -117,7 +122,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
       </>
     ) : (
       <div className='w-full flex flex-col justify-center items-center py-4'>
-        <img src="/Group.png" alt=""/>
+        <img src="/Group.png" alt="" className='mb-4'/>
         <h1 className='uppercase'>{noAnswer}</h1>
       </div>
     )}
