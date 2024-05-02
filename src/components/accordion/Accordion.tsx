@@ -8,6 +8,8 @@ import GromIcon from '../icons/GromIcon';
 import DuiIcon from '../icons/DuiIcon';
 import NoAnswerIcon from '../icons/NoAnswerIcon';
 import TvojaIcon from '../icons/TvojaIcon';
+import ArrowUpIcon from '../icons/ArrowUpIcon';
+import ArrowDownIcon from '../icons/ArrowDownIcon';
 
 interface AccordionProps {
   vmro: string;
@@ -78,6 +80,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     {iconMapping[item.title.toUpperCase()]} 
     <p className='ml-4'>{item.title}</p>
   </span> 
+  {activeAccordion === `accordion-collapse-body-${index}` ? (<ArrowUpIcon />) : (<ArrowDownIcon />)}
   <svg
     data-accordion-icon
     className={`w-3 h-3 rotate-180 shrink-0 ${activeAccordion === `accordion-collapse-body-${index}` ? 'rotate-0' : 'rotate-180'}`}
