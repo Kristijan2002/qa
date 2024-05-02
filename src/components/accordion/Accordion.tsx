@@ -77,7 +77,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   <span className='flex items-center'>
     {iconMapping[item.title.toUpperCase()]} 
     <p className='ml-4'>{item.title}</p>
-  </span> {/* Use item.title instead of <item.title /> */}
+  </span> 
   <svg
     data-accordion-icon
     className={`w-3 h-3 rotate-180 shrink-0 ${activeAccordion === `accordion-collapse-body-${index}` ? 'rotate-0' : 'rotate-180'}`}
