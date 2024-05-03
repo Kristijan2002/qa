@@ -118,13 +118,13 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
           }`}
           aria-labelledby={`accordion-collapse-heading-${index}`}
         >
-          <div className="text-left p-5 border border-b-0 border-gray-200 bg-white">
+          <div className="text-left p-5 border border-1 border-gray-200 bg-white">
             {item.content}
           </div>
         </div>
       </>
     ) : (
-      <div className='w-full flex flex-col justify-center items-center py-4'>
+      <div className='w-full flex flex-col justify-center items-center py-4 border border-1'>
         <img src="/Group.png" alt="" className='mb-4'/>
         <h1 className='uppercase'>{noAnswer}</h1>
       </div>
