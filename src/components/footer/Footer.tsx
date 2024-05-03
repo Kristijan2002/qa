@@ -48,7 +48,7 @@ const Footer: React.FC<FooterProps> = ({chatToPress, chatToPressSubTitle, chatTo
                     <div className='mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 2xl:grid-cols-5 gap-4'>
                         <FooterCard icon={<SmileIcon />} title={chatToPress} subTitle={chatToPressSubTitle} contact='press@sakamdaprasam.mk'/>
                         <FooterCard icon={<MessageFooterIcon />} title={chatToSupport} subTitle={chatToSupportSubTitle} contact='support@sakamdaprasam.mk'/>
-                        <FooterCard icon={<LocationIcon />} title={visitUs} subTitle={visitUsSubTitle} contact='100 Smith Street Collingwood VIC 3066 AU'/>
+                        <FooterCard icon={<LocationIcon />} title={visitUs} subTitle={visitUsSubTitle} contact='Skopje'/>
                         <FooterCard icon={<PhoneIcon />} title={otherQuestions} subTitle={otherQuestionsSubTitle} contact='zdravo@sakamdaprasam.mk'/>
                      
                     </div>
