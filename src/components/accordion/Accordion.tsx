@@ -81,7 +81,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     <div className='bg-white sm:bg-custom-gray w-full sm:w-4/5 mx-auto p-4 pb-36 rounded-b-3xl'>
       <div id="accordion-collapse" data-accordion="collapse" className='mt-4 w-11/12 mx-auto md:w-5/6'>
         {accordionItems.map((item, index) => (
-          <div key={index} className='w-full mb-4'>
+          <div key={index} className='w-full mb-4 test'>
             <h2 id={`accordion-collapse-heading-${index}`}>
             <button
   type="button"

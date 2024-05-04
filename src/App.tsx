@@ -47,6 +47,8 @@ function App() {
   const currentQuestionNumber = currentQuestionIndex + 1;
   const totalQuestions = questions.length;
 
+  
+
   return (
     <div className="App">
       {questions.length > 0 && (
