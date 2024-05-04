@@ -6,7 +6,7 @@ import UkIcon from "../icons/UkIcon";
 import NextIcon from '../icons/NextIcon';
 import PrevIcon from '../icons/PrevIcon';
 import BookIcon from '../icons/BookIcon';
-import introJs from 'intro.js';
+// import introJs from 'intro.js';
 import 'intro.js/introjs.css';
 
 interface BannerProps {
@@ -25,60 +25,60 @@ interface BannerProps {
 }
 
 const Banner: React.FC<BannerProps> = ({ setSelectedButton, selectedButton, setSelectedLanguage, onNextQuestion, onPrevQuestion, questionTitle, questionText, currentQuestion, totalQuestions, title, button1, button2 }) => {
-    const [showIntro, setShowIntro] = useState(false);
+    // const [showIntro, setShowIntro] = useState(false);
 
-    useEffect(() => {
-        const introShown = localStorage.getItem('introShown');
-        if (!introShown) {
-            setShowIntro(true);
-            localStorage.setItem('introShown', 'true');
-        }
-    }, []);
+    // useEffect(() => {
+    //     const introShown = localStorage.getItem('introShown');
+    //     if (!introShown) {
+    //         setShowIntro(true);
+    //         localStorage.setItem('introShown', 'true');
+    //     }
+    // }, []);
 
-    useEffect(() => {
-        if (showIntro) {
-            const elementPrevButton = document.querySelector('.prev-button button') as HTMLElement | null;
-            const elementNextButton = document.querySelector('.next-button button') as HTMLElement | null;
-            const elementLanguageButton = document.querySelector('.language-button') as HTMLElement | null;
-            const elementAccordion = document.querySelector(".test") as HTMLElement | null;
+    // useEffect(() => {
+    //     if (showIntro) {
+    //         const elementPrevButton = document.querySelector('.prev-button button') as HTMLElement | null;
+    //         const elementNextButton = document.querySelector('.next-button button') as HTMLElement | null;
+    //         const elementLanguageButton = document.querySelector('.language-button') as HTMLElement | null;
+    //         const elementAccordion = document.querySelector(".test") as HTMLElement | null;
 
-            const intro = introJs();
-            intro.setOptions({
-                steps: [
-                    {
-                        intro: "Welcome to the tour of our app! Let's get started."
-                    },
-                    {
-                        element: elementLanguageButton,
-                        intro: "Select your preferred language by clicking on the flag icon."
-                    },
-                    {
-                        element: elementNextButton,
-                        intro: "Click here to go to the next question."
-                    },
-                    {
-                        element: elementPrevButton,
-                        intro: "Click here to go to the previous question."
-                    },
-                    {
-                        element: elementAccordion,
-                        intro: "Click here to see the answer!"
-                    }
-                ],
-                showProgress: true,
-                showStepNumbers: true,
-                exitOnOverlayClick: false,
-                exitOnEsc: false,
-                keyboardNavigation: false
-            });
-            intro.start();
+    //         const intro = introJs();
+    //         intro.setOptions({
+    //             steps: [
+    //                 {
+    //                     intro: "Welcome to the tour of our app! Let's get started."
+    //                 },
+    //                 {
+    //                     element: elementLanguageButton,
+    //                     intro: "Select your preferred language by clicking on the flag icon."
+    //                 },
+    //                 {
+    //                     element: elementNextButton,
+    //                     intro: "Click here to go to the next question."
+    //                 },
+    //                 {
+    //                     element: elementPrevButton,
+    //                     intro: "Click here to go to the previous question."
+    //                 },
+    //                 {
+    //                     element: elementAccordion,
+    //                     intro: "Click here to see the answer!"
+    //                 }
+    //             ],
+    //             showProgress: true,
+    //             showStepNumbers: true,
+    //             exitOnOverlayClick: false,
+    //             exitOnEsc: false,
+    //             keyboardNavigation: false
+    //         });
+    //         intro.start();
 
-            // Clean up function
-            return () => {
-                intro.exit(true);
-            };
-        }
-    }, [showIntro]);
+    //         // Clean up function
+    //         return () => {
+    //             intro.exit(true);
+    //         };
+    //     }
+    // }, [showIntro]);
 
     const handleButtonClick = (buttonIndex: number) => {
         setSelectedButton(buttonIndex);
