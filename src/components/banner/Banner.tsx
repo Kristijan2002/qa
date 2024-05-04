@@ -31,12 +31,17 @@ const Banner: React.FC<BannerProps> = ({ setSelectedButton, selectedButton, setS
        const elementPrevButton = document.querySelector('.prev-button button') as HTMLElement | null;
        const elementNextButton = document.querySelector('.next-button button') as HTMLElement | null;
        const elementLanguageButton = document.querySelector('.language-button') as HTMLElement | null;
+       const elementAccordion = document.querySelector(".test") as HTMLElement | null;
 
        const intro = introJs();
        intro.setOptions({
            steps: [
                {
                    intro: "Welcome to the tour of our app! Let's get started."
+               },
+               {
+                   element: elementLanguageButton,
+                   intro: "Select your preferred language by clicking on the flag icon."
                },
                {
                    element: elementNextButton,
@@ -47,8 +52,8 @@ const Banner: React.FC<BannerProps> = ({ setSelectedButton, selectedButton, setS
                    intro: "Click here to go to the previous question."
                },
                {
-                   element: elementLanguageButton,
-                   intro: "Select your preferred language by clicking on the flag icon."
+                element: elementAccordion,
+                intro: "Click here to see answer!"
                }
            ],
            showProgress: true,
