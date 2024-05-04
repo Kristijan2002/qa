@@ -31,14 +31,15 @@ const Footer: React.FC<FooterProps> = ({chatToPress, chatToPressSubTitle, chatTo
                 <h1 className='text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl'>{whoAsks}</h1>
                 <p className='w-11/12 md:w-1/2 mx-auto pt-4'>{weAre}</p>
                 <div className='w-11/12 mx-auto flex justify-between flex-wrap items-center'>
-                    <Partners img='/zelenGrad.png' title='Зелен хуман град' city="Скопје"/>
-                    <Partners img='/o2.png' title='O2' city="Скопје"/>
                     <Partners img='/sansaZaCentar.png' title='Шанса за центар' city="Центар - Скопје"/>
+                    <Partners img='/o2.png' title='O2' city="Скопје"/>
+                    <Partners img='/zelenGrad.png' title='Зелен хуман град' city="Скопје"/>
                     <Partners img='/gaziBaba.png' title='Зелените од гази баба' city="Скопје"/>
-                    <Partners img='/karpos.png' title='Зелените од Карпош' city="Карпош - Скопје"/>
+                    <Partners img='/karpos.png' title='Независни за Карпош - За заштита на Карпош' city="Карпош - Скопје"/>
                     <Partners img='/zaedno.png' title='Заедно за промена' city="Скопје"/>
-                    <Partners img='/sos 1.png' title='Охрид сос' city="Охрид"/>
-                    <Partners img='/stigae.png' title='Стига е!' city="Струмица"/>
+                    <Partners img='/stigae.png' title='Стига е!' city="Струмица, Босилово, Ново Село"/>
+                    <Partners img='/Green org.jpeg' title='Грин.Орг' city='Кочани'/>
+                    <Partners img='/sos 1.png' title='Охрид SOS' city="Охрид"/>
                 </div>
 
                 <div className='mt-36 text-left'>
