@@ -11,6 +11,8 @@ import TvojaIcon from '../icons/TvojaIcon';
 import ArrowUpIcon from '../icons/ArrowUpIcon';
 import ArrowDownIcon from '../icons/ArrowDownIcon';
 import { title } from 'process';
+import VrediIcon from '../icons/VrediIcon';
+import NovaAlternativaIcon from '../icons/NovaAlternativa';
 
 interface AccordionProps {
   vmro: string;
@@ -55,22 +57,24 @@ interface AccordionProps {
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
-  'SDSM': <SdsmIcon />,
+  'КОАЛИЦИЈА СДСМ': <SdsmIcon />,
   'СДСМ': <SdsmIcon />,
-  'VMRO-DPMNE': <VmroIcon />,
+  'КОАЛИЦИЈА ВМРО-ДПМНЕ': <VmroIcon />,
   'ВМРО-ДПМНЕ': <VmroIcon />,
-  'DUI': <DuiIcon />,
+  'КОАЛИЦИЈА ДУИ': <DuiIcon />,
   'ДУИ': <DuiIcon />,
-  'ZNAM': <ZnamIcon />,
+  'ДВИЖЕЊЕ ЗНАМ': <ZnamIcon />,
   'ЗНАМ': <ZnamIcon />,
   'LEVICA': <LevicaIcon />,
   'ЛЕВИЦА': <LevicaIcon />,
   'АЛИЈАНСА НА АЛБАНЦИТЕ': <AlijansaIcon />,
   'ALIJANSA NA ALBANCITE': <AlijansaIcon />,
-  'GROM': <GromIcon />,
+  'КОАЛИЦИЈА ГРОМ': <GromIcon />,
   'ГРОМ': <GromIcon />,
-  "TVOJA PARTIJA": <TvojaIcon />,
-  "ТВОЈА ПАРТИЈА": <TvojaIcon />
+  'TVOJA PARTIJA': <TvojaIcon />,
+  'ТВОЈА ПАРТИЈА': <TvojaIcon />,
+  'КОАЛИЦИЈА ВРЕДИ': <VrediIcon />,
+  'НОВА АЛТЕРНАТИВА': <NovaAlternativaIcon />
 };
 
 <div className='w-full flex flex-col jutify-center items-center' >
@@ -145,9 +149,9 @@ vredi }) => {
   aria-controls={`accordion-collapse-body-${index}`}
 >
 <span className='flex items-center text-xs sm:text-sm md:text-lg'>
-  {iconMapping[item.title?.toUpperCase()]} 
-  <p className='ml-4'>{item.title}</p>
-</span>
+                  {iconMapping[item.title.toUpperCase()]} 
+                  <p className='ml-4'>{item.title}</p>
+                </span>
 
   {activeAccordion === `accordion-collapse-body-${index}` ? (<ArrowUpIcon />) : (<ArrowDownIcon />)}
 </button>
