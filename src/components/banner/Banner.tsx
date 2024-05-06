@@ -122,11 +122,11 @@ const Banner: React.FC<BannerProps> = ({ setSelectedButton, selectedButton, setS
             <div className="flex px-4 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-full sm:w-3/4 justify-center">
                 <button className={`${selectedButton === 1 ? 'bg-custom-gray ' : 'bg-custom-green border-custom-green'} text-left font-semibold text-xs py-4 px-2 border border-b-0 rounded-t-lg flex items-center md:text-base sm:w-5/12`} onClick={() => handleButtonClick(1)}><span className='mr-4'><MessageIcon/></span> {button1}</button>
                 <button className={`${selectedButton === 2 ? 'bg-custom-apricot ' : 'bg-custom-green border-custom-green'} text-left font-semibold text-xs py-4 px-2 border border-b-0 rounded-t-lg flex items-center md:text-base sm:w-5/12`} onClick={() => handleButtonClick(2)}><span className='mr-4'><BookIcon /></span> {button2}</button>
-                <div className="flex absolute bottom-16 justify-between w-1/3 my-4 language-button">
+                {/* <div className="flex absolute bottom-16 justify-between w-1/3 my-4 language-button">
                     <button onClick={() => setSelectedLanguage("alb")}><AlbIcon /></button>
                     <button onClick={() => setSelectedLanguage("mk")}><MkIcon /></button>
                     <button onClick={() => setSelectedLanguage("en")}><UkIcon /></button>
-                </div>
+                </div> */}
             </div>
         </div>
     );
