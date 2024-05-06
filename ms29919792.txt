@@ -1,0 +1,5 @@
+﻿{
+  "Description": "Domain ownership verification file for Microsoft 365 - place in the website root",
+  "Domain": "www.sakamdaprasam.mk",
+  "Id": "bb1bb2b9-63fe-4521-8df5-0a9cb63fe4f5"
+}
