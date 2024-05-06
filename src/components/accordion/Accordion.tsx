@@ -117,7 +117,7 @@ vredi }) => {
     {title: vrediName, content: vredi},
     { title: znamName, content: znam },
     { title: novaAlternativaName, content: novaAlternativa},
-    { title: evropskoName, content: evropsko},
+    // { title: evropskoName, content: evropsko},
     { title: tvojaName, content: tvoja},
     // { title: edinstvenaMakedonijaName, content: edinstvenaMakedonija},
     // { title: avajaName, content: avaja},
