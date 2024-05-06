@@ -10,6 +10,7 @@ import NoAnswerIcon from '../icons/NoAnswerIcon';
 import TvojaIcon from '../icons/TvojaIcon';
 import ArrowUpIcon from '../icons/ArrowUpIcon';
 import ArrowDownIcon from '../icons/ArrowDownIcon';
+import { title } from 'process';
 
 interface AccordionProps {
   vmro: string;
@@ -49,6 +50,8 @@ interface AccordionProps {
   rodinaMakedonijaName: string;
   desnaName: string;
   demokratiName: string;
+  vrediName: string;
+  vredi: string;
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
@@ -94,7 +97,9 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   makedonskaEraName,
   rodinaMakedonijaName,
   desnaName,
-  demokratiName, }) => {
+  demokratiName,
+vrediName,
+vredi }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -107,9 +112,9 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     { title: sdsmName, content: sdsm },
     { title: vmroName, content: vmro },
     { title: gromName, content: grom },
-    { title: evropskiFrontName, content: evropskiFront},
+    { title: duiName, content: dui},
     { title: levicaName, content: levica },
-    { title: vlenName, content: vlen},
+    {title: vrediName, content: vredi},
     { title: znamName, content: znam },
     { title: edinstvenaMakedonijaName, content: edinstvenaMakedonija},
     { title: novaAlternativaName, content: novaAlternativa},
@@ -120,6 +125,7 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
     { title: rodinaMakedonijaName, content: rodinaMakedonija},
     { title: desnaName, content: desna},
     { title: demokratiName, content: demokrati},
+    // { title: vlenName, content: vlen},
   ];
 
   

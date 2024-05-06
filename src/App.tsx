@@ -118,6 +118,8 @@ function App() {
             rodinaMakedonija={questions[currentQuestionIndex].rodinaMakedonija}
             desna={questions[currentQuestionIndex].desna}
             demokrati={questions[currentQuestionIndex].demokrati}
+            vredi=""
+            vrediName={pageTranslation.vrediName}
           />
         )
       ) : (
