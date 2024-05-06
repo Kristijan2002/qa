@@ -20,6 +20,16 @@ interface AccordionProps {
   alijansa: string;
   grom: string;
   tvoja: string;
+  evropskiFront: string;
+  vlen: string;
+  edinstvenaMakedonija: string;
+  novaAlternativa: string;
+  avaja: string;
+  evropsko: string;
+  makedonskaEra: string;
+  rodinaMakedonija: string;
+  desna: string;
+  demokrati: string;
   noAnswer: string;
   vmroName: string;
   sdsmName: string;
@@ -29,13 +39,23 @@ interface AccordionProps {
   alijansaName: string;
   gromName: string;
   tvojaName: string;
+  evropskiFrontName: string;
+  vlenName: string;
+  edinstvenaMakedonijaName: string;
+  novaAlternativaName: string;
+  avajaName: string;
+  evropskoName: string;
+  makedonskaEraName: string;
+  rodinaMakedonijaName: string;
+  desnaName: string;
+  demokratiName: string;
 }
 
 const iconMapping: Record<string, React.ReactNode> = {
-  'VMRO-DPMNE': <VmroIcon />,
-  'ВМРО-ДПМНЕ': <VmroIcon />,
   'SDSM': <SdsmIcon />,
   'СДСМ': <SdsmIcon />,
+  'VMRO-DPMNE': <VmroIcon />,
+  'ВМРО-ДПМНЕ': <VmroIcon />,
   'DUI': <DuiIcon />,
   'ДУИ': <DuiIcon />,
   'ZNAM': <ZnamIcon />,
@@ -55,7 +75,26 @@ const iconMapping: Record<string, React.ReactNode> = {
   <h1 className='uppercase'>Nema odgovor</h1>
   </div>
 
-const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja, noAnswer, vmroName, sdsmName, duiName, znamName, levicaName, alijansaName, gromName, tvojaName }) => {
+const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, alijansa, grom, tvoja, noAnswer, vmroName, sdsmName, duiName, znamName, levicaName, alijansaName, gromName, tvojaName, evropskiFront,
+  vlen,
+  edinstvenaMakedonija,
+  novaAlternativa,
+  avaja,
+  evropsko,
+  makedonskaEra,
+  rodinaMakedonija,
+  desna,
+  demokrati,
+  evropskiFrontName,
+  vlenName,
+  edinstvenaMakedonijaName,
+  novaAlternativaName,
+  avajaName,
+  evropskoName,
+  makedonskaEraName,
+  rodinaMakedonijaName,
+  desnaName,
+  demokratiName, }) => {
   const [activeAccordion, setActiveAccordion] = useState<string | null>(null);
 
   const toggleAccordion = (id: string) => {
@@ -65,17 +104,24 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   };
 
   const accordionItems = [
-    { title: vmroName, content: vmro },
     { title: sdsmName, content: sdsm },
-    { title: duiName, content: dui },
-    { title: znamName, content: znam },
-    { title: levicaName, content: levica },
-    { title: alijansaName, content: alijansa },
+    { title: vmroName, content: vmro },
     { title: gromName, content: grom },
-    { title: tvojaName, content: tvoja}
+    { title: evropskiFrontName, content: evropskiFront},
+    { title: levicaName, content: levica },
+    { title: vlenName, content: vlen},
+    { title: znamName, content: znam },
+    { title: edinstvenaMakedonijaName, content: edinstvenaMakedonija},
+    { title: novaAlternativaName, content: novaAlternativa},
+    { title: avajaName, content: avaja},
+    { title: evropskoName, content: evropsko},
+    { title: makedonskaEraName, content: makedonskaEra},
+    { title: tvojaName, content: tvoja},
+    { title: rodinaMakedonijaName, content: rodinaMakedonija},
+    { title: desnaName, content: desna},
+    { title: demokratiName, content: demokrati},
   ];
 
-  accordionItems.sort((a, b) => a.title.localeCompare(b.title));
   
   return (
     <div className='bg-white sm:bg-custom-gray w-full sm:w-4/5 mx-auto p-4 pb-36 rounded-b-3xl'>
@@ -92,10 +138,11 @@ const Accordion: React.FC<AccordionProps> = ({ vmro, sdsm, dui, znam, levica, al
   aria-expanded={activeAccordion === `accordion-collapse-body-${index}`}
   aria-controls={`accordion-collapse-body-${index}`}
 >
-  <span className='flex items-center text-xs sm:text-sm md:text-lg'>
-    {iconMapping[item.title.toUpperCase()]} 
-    <p className='ml-4'>{item.title}</p>
-  </span> 
+<span className='flex items-center text-xs sm:text-sm md:text-lg'>
+  {iconMapping[item.title?.toUpperCase()]} 
+  <p className='ml-4'>{item.title}</p>
+</span>
+
   {activeAccordion === `accordion-collapse-body-${index}` ? (<ArrowUpIcon />) : (<ArrowDownIcon />)}
 </button>
             </h2>

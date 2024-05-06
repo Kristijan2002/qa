@@ -20,6 +20,16 @@ interface Question {
   alijansa: string;
   grom: string;
   tvoja: string;
+  evropskiFront: string;
+  vlen: string;
+  edinstvenaMakedonija: string;
+  novaAlternativa: string
+  avaja:string;
+  evropsko:string
+  makedonskaEra:string;
+  rodinaMakedonija:string;
+  desna:string;
+  demokrati: string;
 }
 
 function App() {
@@ -88,6 +98,26 @@ function App() {
             alijansaName={pageTranslation.alijansaName}
             gromName={pageTranslation.gromName}
             tvojaName={pageTranslation.tvojaName}
+            evropskiFrontName={pageTranslation.evropskiFrontName}
+            vlenName={pageTranslation.vlenName}
+            edinstvenaMakedonijaName={pageTranslation.edinstvenaName}
+            novaAlternativaName={pageTranslation.novaAlternativaName}
+            avajaName={pageTranslation.avajaName}
+            evropskoName={pageTranslation.evropskoName}
+            makedonskaEraName={pageTranslation.makedonskaEraName}
+            rodinaMakedonijaName={pageTranslation.rodinaMakedonijaName}
+            desnaName={pageTranslation.desnaName}
+            demokratiName={pageTranslation.demokratiName}
+            evropskiFront= {questions[currentQuestionIndex].evropskiFront}
+            vlen={questions[currentQuestionIndex].vlen}
+            edinstvenaMakedonija={questions[currentQuestionIndex].edinstvenaMakedonija}
+            novaAlternativa={questions[currentQuestionIndex].novaAlternativa}
+            avaja={questions[currentQuestionIndex].avaja}
+            evropsko={questions[currentQuestionIndex].evropsko}
+            makedonskaEra={questions[currentQuestionIndex].makedonskaEra}
+            rodinaMakedonija={questions[currentQuestionIndex].rodinaMakedonija}
+            desna={questions[currentQuestionIndex].desna}
+            demokrati={questions[currentQuestionIndex].demokrati}
           />
         )
       ) : (
